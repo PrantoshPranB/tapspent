@@ -1114,7 +1114,15 @@ if (location.hash === '#log') {
 /* ════════════════════════════════════════
    INIT
 ════════════════════════════════════════ */
+
 renderHome();
+// Auto-open quick log on launch
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    openQuickLog();
+  }, 300);
+});
+
 </script>
 
 </body>
